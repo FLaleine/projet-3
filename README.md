@@ -1,3 +1,3 @@
 # projet-3
 Projet n°3 Openclassrooms "ohmyfood"
-Maquette dans le dossier Projet-3
+Menu, maquette et brief dans le dossier __Maquette__
