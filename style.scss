@@ -1,0 +1,52 @@
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: #4f9982;
+
+    & #logo {
+        width: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.bloc_page {
+    display: flex;
+    padding: 15%;
+
+    &__menu {
+        width: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        &--1 {
+            background-color: yellow;
+        }
+
+        &--2 {
+            background-color: red;
+        }
+
+        &--3 {
+            background-color: green;
+        }
+
+        &--4 {
+            background-color: blue;
+        }
+    }
+
+    & .prochainement {
+        background-color: #4f9982;
+        color: yellow;
+    }
+}
+
+footer {
+    background-color: #4f9982;
+    color: yellow;
+}

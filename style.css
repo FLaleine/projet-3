@@ -1,0 +1,51 @@
+header {
+  background-color: #4f9982;
+}
+
+header #logo {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloc_page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15%;
+}
+
+.bloc_page__menu {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bloc_page__menu--1 {
+  background-color: yellow;
+}
+
+.bloc_page__menu--2 {
+  background-color: red;
+}
+
+.bloc_page__menu--3 {
+  background-color: green;
+}
+
+.bloc_page__menu--4 {
+  background-color: blue;
+}
+
+.bloc_page .prochainement {
+  background-color: #4f9982;
+  color: yellow;
+}
+
+footer {
+  background-color: #4f9982;
+  color: yellow;
+}
+/*# sourceMappingURL=style.css.map */
