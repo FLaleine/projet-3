@@ -13,30 +13,37 @@ header {
     }
 }
 
+section {
+    display: flex;
+}
+
 .bloc_page {
     display: flex;
     padding: 15%;
 
     &__menu {
         width: 500px;
+        height: 500px;
         display: block;
-        margin-left: auto;
+        margin-left: 2%;
         margin-right: auto;
+        font-size: 35px;
+        text-align: center;
 
         &--1 {
-            background-color: yellow;
+            background-color: #fcdfdb;
         }
 
         &--2 {
-            background-color: red;
+            background-color: #fff5fe;
         }
 
         &--3 {
-            background-color: green;
+            background-color: #f9f9f9;
         }
 
         &--4 {
-            background-color: blue;
+            background-color: #fdfffd;
         }
     }
 

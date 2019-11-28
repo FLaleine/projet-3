@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+}
+
 header {
   background-color: #4f9982;
 }
@@ -9,6 +13,12 @@ header #logo {
   margin-right: auto;
 }
 
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .bloc_page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,25 +28,28 @@ header #logo {
 
 .bloc_page__menu {
   width: 500px;
+  height: 500px;
   display: block;
-  margin-left: auto;
+  margin-left: 2%;
   margin-right: auto;
+  font-size: 35px;
+  text-align: center;
 }
 
 .bloc_page__menu--1 {
-  background-color: yellow;
+  background-color: #fcdfdb;
 }
 
 .bloc_page__menu--2 {
-  background-color: red;
+  background-color: #fff5fe;
 }
 
 .bloc_page__menu--3 {
-  background-color: green;
+  background-color: #f9f9f9;
 }
 
 .bloc_page__menu--4 {
-  background-color: blue;
+  background-color: #fdfffd;
 }
 
 .bloc_page .prochainement {
