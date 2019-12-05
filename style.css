@@ -39,6 +39,57 @@
   src: url("./police/Fonts/kaushanscript-regular.ttf");
 }
 
+.delice {
+  font-family: 'akadora';
+  font-size: 54px;
+  background: -webkit-linear-gradient(#0000ff, #00ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu3 {
+  font-family: 'evie';
+  color: #0000ff;
+  font-size: 35px;
+}
+
+.menu4 {
+  font-family: 'kaushan';
+  color: #339933;
+  font-size: 35px;
+}
+
+.palette {
+  font-family: 'kaushan';
+  font-size: 54px;
+  background: -webkit-linear-gradient(#339933, #ccffcc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.note {
+  font-family: 'yikes';
+  color: #101010;
+}
+
+.menu {
+  font-family: 'cotrell';
+  color: #101010;
+}
+
+.chic {
+  font-family: 'auber';
+  font-size: 54px;
+  background: -webkit-linear-gradient(#ff9900, #9900cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu2 {
+  font-family: 'Solway-regular';
+  color: #ff9900;
+}
+
 body {
   margin: 0px;
 }
@@ -60,38 +111,6 @@ section {
   display: flex;
 }
 
-.delice {
-  font-family: 'akadora';
-}
-
-.menu3 {
-  font-family: 'evie';
-}
-
-.menu4 {
-  font-family: 'kaushan';
-}
-
-.palette {
-  font-family: 'kaushan';
-}
-
-.note {
-  font-family: 'yikes';
-}
-
-.menu {
-  font-family: 'cotrell';
-}
-
-.chic {
-  font-family: 'auber';
-}
-
-.menu2 {
-  font-family: 'Solway-regular';
-}
-
 .fas {
   max-width: 100%;
   height: auto;
@@ -104,6 +123,10 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 15%;
 }
 
@@ -115,6 +138,8 @@ section {
   margin-right: auto;
   font-size: 35px;
   text-align: center;
+  -webkit-box-shadow: 1px 1px 8px grey;
+          box-shadow: 1px 1px 8px grey;
 }
 
 .bloc_page__menu--1 {
