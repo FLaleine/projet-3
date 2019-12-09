@@ -167,4 +167,9 @@ section {
 footer {
     background-color: #4f9982;
     color: yellow;
+    display: flex;
+    font-size: 1.6em;
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
 }

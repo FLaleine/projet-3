@@ -175,5 +175,14 @@ section {
 footer {
   background-color: #4f9982;
   color: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 /*# sourceMappingURL=style.css.map */
