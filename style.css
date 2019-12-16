@@ -40,6 +40,11 @@
   src: url("./police/Fonts/kaushanscript-regular.ttf");
 }
 
+@font-face {
+  font-family: 'alpine';
+  src: url("./police/Fonts/alpine.ttf");
+}
+
 .delice {
   font-family: 'akadora';
   font-size: 54px;
@@ -91,6 +96,7 @@
   color: #ff9900;
 }
 
+/*Typographie*/
 body {
   margin: 0px;
 }
@@ -111,15 +117,6 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.fas {
-  width: 100%;
-  height: auto;
-  font-size: 54px;
-  background: -webkit-linear-gradient(#ff0066, #ff9966);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .bloc_page {
@@ -181,6 +178,46 @@ section {
   text-align: center;
   margin: 100px;
   font-size: 25px;
+}
+
+.bloc_page1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+  margin-right: 400px;
+  margin-left: 400px;
+}
+
+.section1 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fcdfdb;
+  text-align: center;
+  font-family: 'alpine';
+}
+
+.h2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.prix {
+  font-weight: bold;
+}
+
+.fas {
+  width: 100%;
+  height: auto;
+  font-size: 54px;
+  background: -webkit-linear-gradient(#ff0066, #ff9966);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
@@ -247,7 +284,6 @@ footer {
   }
 }
 
-/*Responsive design : petits écrans*/
 @media all and (max-width: 550px) {
   #logo {
     display: -webkit-box;
