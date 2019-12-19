@@ -103,6 +103,7 @@ body {
 
 header {
   background-color: #4f9982;
+  padding: 8px;
 }
 
 header #logo {
@@ -189,8 +190,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 5%;
-  margin-right: 400px;
-  margin-left: 400px;
+  margin: 0 auto;
 }
 
 .section1 {
@@ -201,14 +201,52 @@ section {
   background-color: #fcdfdb;
   text-align: center;
   font-family: 'alpine';
+  /*padding: 20px;*/
 }
 
 .h2 {
   font-family: 'Courier New', Courier, monospace;
 }
 
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.hrheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.separation {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .prix {
   font-weight: bold;
+}
+
+.ligneprix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.ligneprix p {
+  margin-right: 10px;
 }
 
 .fas {
@@ -233,35 +271,14 @@ footer {
   padding-right: 10%;
   padding-left: 10%;
   font: 1em Verdana;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Responsive design (adaptation a l'écran)*/
 @media all and (max-width: 1024px) {
-  #logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-  }
-  .bloc_page {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .bloc_page__menu {
-    width: 48%;
-    margin-bottom: 2%;
-  }
-  section {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-@media all and (max-width: 740px) {
-  #logo {
+  header #logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -285,83 +302,18 @@ footer {
 }
 
 @media all and (max-width: 550px) {
-  #logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-  }
-  .bloc_page {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   .bloc_page__menu {
     width: 100%;
     margin-bottom: 5%;
-  }
-  section {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  footer {
-    width: 100%;
   }
 }
 
 @media all and (max-width: 480px) {
-  #logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-  }
-  .bloc_page {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .bloc_page__menu {
-    width: 100%;
-    margin-bottom: 5%;
-  }
   section {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  footer {
-    width: 26em;
-  }
-}
-
-@media all and (max-width: 320px) {
-  #logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 32em;
-  }
-  .bloc_page {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .bloc_page__menu {
     width: 100%;
-    margin-bottom: 5%;
   }
-  section {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  footer {
-    width: 27em;
+  .bloc_page .prochainement {
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
