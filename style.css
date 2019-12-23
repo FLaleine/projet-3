@@ -85,7 +85,7 @@
 
 .chic {
   font-family: 'auber';
-  font-size: 1.3em;
+  font-size: 54px;
   background: -webkit-linear-gradient(#ff9900, #9900cc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -254,6 +254,28 @@ footer {
   font-family: 'alpine';
 }
 
+.bloc_page3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.section3 {
+  background-color: #f9f9f9;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: 'alpine';
+}
+
 .h2 {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -263,10 +285,6 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin-top: 0px;
-}
-
-.chic {
-  font-size: 3em;
 }
 
 .hrheader {
