@@ -181,6 +181,34 @@ section {
   font-size: 25px;
 }
 
+.fas {
+  width: 100%;
+  height: auto;
+  font-size: 54px;
+  background: -webkit-linear-gradient(#ff0066, #ff9966);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  background-color: #4f9982;
+  color: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 10%;
+  padding-left: 10%;
+  font: 1em Verdana;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Page*/
 .bloc_page1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -204,6 +232,28 @@ section {
   /*padding: 20px;*/
 }
 
+.bloc_page2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.section2 {
+  background-color: #fff5fe;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: 'alpine';
+}
+
 .h2 {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -213,6 +263,10 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin-top: 0px;
+}
+
+.chic {
+  font-size: 3em;
 }
 
 .hrheader {
@@ -247,33 +301,6 @@ h1 {
 
 .ligneprix p {
   margin-right: 10px;
-}
-
-.fas {
-  width: 100%;
-  height: auto;
-  font-size: 54px;
-  background: -webkit-linear-gradient(#ff0066, #ff9966);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-footer {
-  background-color: #4f9982;
-  color: yellow;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.6em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-right: 10%;
-  padding-left: 10%;
-  font: 1em Verdana;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 /* Responsive design (adaptation a l'écran)*/

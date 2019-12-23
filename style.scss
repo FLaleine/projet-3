@@ -168,6 +168,30 @@ section {
 
 }
 
+.fas {
+    width: 100%;
+    height: auto;
+    font-size: 54px;
+    background: -webkit-linear-gradient(#ff0066, #ff9966);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer {
+    background-color: #4f9982;
+    color: yellow;
+    display: flex;
+    font-size: 1.6em;
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
+    font: 1em Verdana;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*Page*/
+
 .bloc_page1 {
     display: flex;
     flex-direction: column;
@@ -183,6 +207,20 @@ section {
     /*padding: 20px;*/
 }
 
+.bloc_page2 {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+.section2 {
+    background-color: #fff5fe;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'alpine';
+}
+
 .h2 {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -192,6 +230,10 @@ h1 {
     font-weight: bold;
     text-align: center;
     margin-top: 0px;
+}
+
+.chic {
+    font-size: 3em;
 }
 
 .hrheader {
@@ -217,28 +259,6 @@ h1 {
 
 .ligneprix p {
     margin-right: 10px;
-}
-
-.fas {
-    width: 100%;
-    height: auto;
-    font-size: 54px;
-    background: -webkit-linear-gradient(#ff0066, #ff9966);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-footer {
-    background-color: #4f9982;
-    color: yellow;
-    display: flex;
-    font-size: 1.6em;
-    justify-content: space-between;
-    padding-right: 10%;
-    padding-left: 10%;
-    font: 1em Verdana;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 /* Responsive design (adaptation a l'écran)*/
