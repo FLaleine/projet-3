@@ -262,10 +262,27 @@ h1 {
 
 .hrheader {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calque_1 {
+    fill: #000000;
+    width: 200px;
+    margin: 2%;
 }
 
 .separation {
-    transform: rotate(90deg);
+    width: 150px;
+    margin: 0 20px;
+
+    &--menu-12 {
+        transform: rotate(180deg);
+    }
+
+    &.cls-1 {
+        fill: black;
+    }
 }
 
 .prix {
@@ -323,6 +340,10 @@ h1 {
 
     .bloc_page .prochainement {
         margin: auto;
+    }
+
+    #calque_1 {
+        width: 100%;
     }
 }
 
