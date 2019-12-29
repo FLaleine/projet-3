@@ -327,6 +327,12 @@ h1 {
   margin: 2%;
 }
 
+#calque_2 {
+  fill: #d18f44;
+  width: 200px;
+  margin: 2%;
+}
+
 .separation {
   width: 150px;
   margin: 0 20px;
@@ -404,6 +410,9 @@ h1 {
     margin: auto;
   }
   #calque_1 {
+    width: 100%;
+  }
+  #calque_2 {
     width: 100%;
   }
 }
