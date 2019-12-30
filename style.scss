@@ -249,6 +249,13 @@ footer {
     font-family: 'alpine';
 }
 
+.section_mention-legale {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border: black 10px;
+}
+
 .h2 {
     font-family: 'Courier New', Courier, monospace;
 }
