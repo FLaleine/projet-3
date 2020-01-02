@@ -249,6 +249,13 @@ footer {
     font-family: 'alpine';
 }
 
+.section_mention-legale {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: #fddddf;
+}
+
 .h2 {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -262,10 +269,49 @@ h1 {
 
 .hrheader {
     display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 800px;
+}
+
+/* Barre de separation (svg) */
+.calque {
+    width: 200px;
+
+    &--1 {
+        fill: #000000;
+    }
+
+    &--2 {
+        fill: #d18f44;
+    }
+
+    &--3 {
+        fill: #0329dc;
+    }
+
+    &--4 {
+        fill: url(#Gradient1);
+    }
+
+    &--rotate180 {
+        transform: rotate(180deg);
+    }
 }
 
 .separation {
-    transform: rotate(90deg);
+    width: 150px;
+    margin: 0 20px;
+
+    &--menu-12 {
+        transform: rotate(180deg);
+    }
+
+    &.cls-1 {
+        fill: black;
+    }
 }
 
 .prix {
@@ -323,6 +369,22 @@ h1 {
 
     .bloc_page .prochainement {
         margin: auto;
+    }
+
+    #calque_1 {
+        width: 100%;
+    }
+
+    #calque_2 {
+        width: 100%;
+    }
+
+    #calque_3 {
+        width: 100%;
+    }
+
+    #calque_4 {
+        width: 100%;
     }
 }
 

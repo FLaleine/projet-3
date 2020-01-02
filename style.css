@@ -298,6 +298,18 @@ footer {
   font-family: 'alpine';
 }
 
+.section_mention-legale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fddddf;
+}
+
 .h2 {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -313,11 +325,55 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 800px;
+}
+
+/* Barre de separation (svg) */
+.calque {
+  width: 200px;
+}
+
+.calque--1 {
+  fill: #000000;
+}
+
+.calque--2 {
+  fill: #d18f44;
+}
+
+.calque--3 {
+  fill: #0329dc;
+}
+
+.calque--4 {
+  fill: url(#Gradient1);
+}
+
+.calque--rotate180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .separation {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  width: 150px;
+  margin: 0 20px;
+}
+
+.separation--menu-12 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.separation.cls-1 {
+  fill: black;
 }
 
 .prix {
@@ -381,6 +437,18 @@ h1 {
   }
   .bloc_page .prochainement {
     margin: auto;
+  }
+  #calque_1 {
+    width: 100%;
+  }
+  #calque_2 {
+    width: 100%;
+  }
+  #calque_3 {
+    width: 100%;
+  }
+  #calque_4 {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
