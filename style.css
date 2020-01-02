@@ -307,7 +307,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: black 10px;
+  background-color: #fddddf;
 }
 
 .h2 {
@@ -325,37 +325,41 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 800px;
 }
 
 /* Barre de separation (svg) */
-#calque_1 {
+.calque {
+  width: 200px;
+}
+
+.calque--1 {
   fill: #000000;
-  width: 200px;
-  margin: 2%;
 }
 
-#calque_2 {
+.calque--2 {
   fill: #d18f44;
-  width: 200px;
-  margin: 2%;
 }
 
-#calque_3 {
+.calque--3 {
   fill: #0329dc;
-  width: 200px;
-  margin: 2%;
 }
 
-#calque_4 {
-  fill: #b5f47e;
-  width: 200px;
-  margin: 2%;
+.calque--4 {
+  fill: url(#Gradient1);
+}
+
+.calque--rotate180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .separation {

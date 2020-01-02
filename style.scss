@@ -253,7 +253,7 @@ footer {
     display: flex;
     text-align: center;
     flex-direction: column;
-    border: black 10px;
+    background-color: #fddddf;
 }
 
 .h2 {
@@ -269,33 +269,36 @@ h1 {
 
 .hrheader {
     display: flex;
-    justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 800px;
 }
 
 /* Barre de separation (svg) */
-#calque_1 {
-    fill: #000000;
+.calque {
     width: 200px;
-    margin: 2%;
-}
 
-#calque_2 {
-    fill: #d18f44;
-    width: 200px;
-    margin: 2%;
-}
+    &--1 {
+        fill: #000000;
+    }
 
-#calque_3 {
-    fill: #0329dc;
-    width: 200px;
-    margin: 2%;
-}
+    &--2 {
+        fill: #d18f44;
+    }
 
-#calque_4 {
-    fill: #b5f47e;
-    width: 200px;
-    margin: 2%;
+    &--3 {
+        fill: #0329dc;
+    }
+
+    &--4 {
+        fill: url(#Gradient1);
+    }
+
+    &--rotate180 {
+        transform: rotate(180deg);
+    }
 }
 
 .separation {
