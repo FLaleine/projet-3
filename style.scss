@@ -44,6 +44,16 @@
     src: url('./police/Fonts/alpine.ttf');
 }
 
+@font-face {
+    font-family: 'MaShanZheng';
+    src: url('./police/MaShanZheng/MaShanZheng-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'caveat';
+    src: url('./police/caveat/Caveat-Regular.ttf')
+}
+
 .delice {
     font-family: 'akadora';
     font-size: 54px;
@@ -73,8 +83,9 @@
 }
 
 .note {
-    font-family: 'yikes';
+    font-family: 'MaShanZheng';
     color: #101010;
+    font-size: 2.5em;
 }
 
 .menu {
@@ -93,6 +104,11 @@
 .menu2 {
     font-family: 'Solway-regular';
     color: #ff9900;
+}
+
+.section1 p {
+    font-family: 'caveat';
+    font-size: 1.4em;
 }
 
 /*Typographie*/
@@ -262,7 +278,7 @@ footer {
 
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
+    /*font-weight: bold;*/
     text-align: center;
     margin-top: 0px;
 }
@@ -371,19 +387,23 @@ h1 {
         margin: auto;
     }
 
-    #calque_1 {
+    .calque {
         width: 100%;
     }
 
-    #calque_2 {
+    .calque_1 {
         width: 100%;
     }
 
-    #calque_3 {
+    .calque_2 {
         width: 100%;
     }
 
-    #calque_4 {
+    .calque_3 {
+        width: 100%;
+    }
+
+    .calque_4 {
         width: 100%;
     }
 }
