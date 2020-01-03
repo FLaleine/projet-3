@@ -55,6 +55,11 @@
   src: url("./police/caveat/Caveat-Regular.ttf");
 }
 
+@font-face {
+  font-family: 'volkorn';
+  src: url("./police/volkorn/Vollkorn-Regular.ttf");
+}
+
 .delice {
   font-family: 'akadora';
   font-size: 54px;
@@ -95,9 +100,11 @@
 }
 
 .chic {
-  font-family: 'auber';
+  font-family: 'volkorn';
   font-size: 54px;
-  background: -webkit-linear-gradient(#ff9900, #9900cc);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(37%, #d18f44), color-stop(63%, #5a32c0));
+  background: linear-gradient(to bottom right, #d18f44 37%, #5a32c0 63%);
+  /*background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -110,6 +117,23 @@
 .section1 p {
   font-family: 'caveat';
   font-size: 1.4em;
+}
+
+.section2 p {
+  font-family: 'volkorn';
+  font-size: 1.2em;
+}
+
+.appétit {
+  color: #d18f44;
+}
+
+.plaisir {
+  color: #935087;
+}
+
+.Mouvement-Final {
+  color: #5a32c0;
 }
 
 /*Typographie*/
@@ -363,6 +387,14 @@ h1 {
 
 .calque--2 {
   fill: #d18f44;
+}
+
+.calque--21 {
+  fill: #935087;
+}
+
+.calque--22 {
+  fill: #5a32c0;
 }
 
 .calque--3 {
