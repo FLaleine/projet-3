@@ -140,6 +140,11 @@
   font-size: 1.2em;
 }
 
+.section4 p {
+  font-family: 'shadow';
+  font-size: 1.2em;
+}
+
 .appétit {
   color: #d18f44;
 }
