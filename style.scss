@@ -322,6 +322,24 @@ footer {
     background-color: #fddddf;
 }
 
+.bloc_page_prochainement {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.section_prochainement {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
 .h2 {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -331,6 +349,10 @@ h1 {
     /*font-weight: bold;*/
     text-align: center;
     margin-top: 0px;
+}
+
+.h1prochainement {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .hrheader {
@@ -409,6 +431,38 @@ h1 {
     margin-right: 10px;
 }
 
+.svgprochainement {
+    /*height: 100px;*/
+    width: 100px;
+    fill: black;
+    stroke: black;
+    stroke-width: 3px;
+    position: relative;
+    animation: bounce 0.7s ease infinite;
+
+    &--2 {
+        animation-delay: 0.1s;
+    }
+
+    &--3 {
+        animation-delay: 0.2s;
+    }
+}
+
+@keyframes bounce {
+    from {
+        top: 0px;
+    }
+
+    50% {
+        top: 20px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
 /* Responsive design (adaptation a l'écran)*/
 @media all and (max-width: 1024px) {
     header #logo {
@@ -475,6 +529,11 @@ h1 {
 
     .palette {
         font-size: 45px;
+    }
+
+    .boxsvg {
+        width: 100%;
+        display: flex;
     }
 }
 
