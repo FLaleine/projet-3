@@ -346,6 +346,10 @@ h1 {
     &--rotate180 {
         transform: rotate(180deg);
     }
+
+    &--flip {
+        transform: scaleX(-1);
+    }
 }
 
 .separation {

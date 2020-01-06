@@ -410,6 +410,11 @@ h1 {
           transform: rotate(180deg);
 }
 
+.calque--flip {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
 .separation {
   width: 150px;
   margin: 0 20px;
