@@ -60,16 +60,27 @@
   src: url("./police/volkorn/Vollkorn-Regular.ttf");
 }
 
+@font-face {
+  font-family: 'shadow';
+  src: url("./police/shadows-into-light/ShadowsIntoLight.ttf");
+}
+
+@font-face {
+  font-family: 'dancing';
+  src: url("./police/dancing-script/DancingScript-Regular.ttf");
+}
+
 .delice {
-  font-family: 'akadora';
+  font-family: 'dancing';
   font-size: 54px;
   background: -webkit-linear-gradient(#0000ff, #00ccff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: normal;
 }
 
 .menu3 {
-  font-family: 'evie';
+  font-family: 'dancing';
   color: #0000ff;
   font-size: 35px;
 }
@@ -121,6 +132,11 @@
 
 .section2 p {
   font-family: 'volkorn';
+  font-size: 1.2em;
+}
+
+.section3 p {
+  font-family: 'shadow';
   font-size: 1.2em;
 }
 
@@ -202,7 +218,7 @@ section {
 }
 
 .bloc_page__menu--3 {
-  background-color: #f9f9f9;
+  background-color: #edefef;
 }
 
 .bloc_page__menu--4 {
