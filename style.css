@@ -105,6 +105,12 @@
   font-size: 2.5em;
 }
 
+.note-index {
+  font-family: 'MaShanZheng';
+  color: #101010;
+  font-size: 54px;
+}
+
 .menu {
   font-family: 'cotrell';
   color: #101010;
@@ -526,6 +532,12 @@ h1 {
   }
   .calque_4 {
     width: 100%;
+  }
+  .chic {
+    font-size: 45px;
+  }
+  .palette {
+    font-size: 45px;
   }
 }
 /*# sourceMappingURL=style.css.map */
