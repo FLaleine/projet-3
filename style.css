@@ -163,6 +163,14 @@
   color: #5a32c0;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: yellow;
+}
+
 /*Typographie*/
 body {
   margin: 0px;
