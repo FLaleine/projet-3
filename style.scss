@@ -269,6 +269,32 @@ footer {
     box-sizing: border-box;
 }
 
+.bouton {
+    animation: thing 3s infinite;
+}
+
+@keyframes thing {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    3% {
+        transform: rotate(-5deg)
+    }
+
+    4% {
+        transform: rotate(5deg)
+    }
+
+    5% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
 /*Page*/
 /*Méthode BEM Section*/
 .section {
