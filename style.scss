@@ -184,6 +184,7 @@ section {
     display: flex;
 }
 
+/*Méthode BEM BLOC PAGE*/
 .bloc_page {
     display: flex;
     flex-direction: column;
@@ -236,8 +237,6 @@ section {
         margin: 100px;
         font-size: 25px;
     }
-
-
 }
 
 .fas {
@@ -263,52 +262,76 @@ footer {
 }
 
 /*Page*/
-.section1 {
+/*Méthode BEM Section*/
+.section {
+    display: flex;
     flex-direction: column;
-    background-color: #fcdfdb;
     text-align: center;
+    box-sizing: border-box;
+
+    &--1 {
+        background-color: #fcdfdb;
+        font-family: 'alpine';
+    }
+
+    &--2 {
+        background-color: #fff5fe;
+        font-family: 'alpine';
+    }
+
+    &--3 {
+        background-color: #f9f9f9;
+        font-family: 'alpine';
+    }
+
+    &--4 {
+        background-color: #fdfffd;
+        font-family: 'alpine';
+    }
+
+    &--mention_legale {
+        background-color: #fddddf;
+    }
+
+    &--prochainement {
+        background-color: beige;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+}
+
+/*.section1 {
+    background-color: #fcdfdb;
     font-family: 'alpine';
-    /*padding: 20px;*/
 }
 
 .section2 {
     background-color: #fff5fe;
-    flex-direction: column;
-    text-align: center;
     font-family: 'alpine';
 }
 
 .section3 {
     background-color: #f9f9f9;
-    flex-direction: column;
-    text-align: center;
     font-family: 'alpine';
 }
 
 .section4 {
     background-color: #fdfffd;
-    flex-direction: column;
-    text-align: center;
     font-family: 'alpine';
 }
 
 .section_mention-legale {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
     background-color: #fddddf;
 }
 
 .section_prochainement {
     background-color: beige;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 5%;
-    box-sizing: border-box;
 }
-
+*/
 .h2 {
     font-family: 'Courier New', Courier, monospace;
 }

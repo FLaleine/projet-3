@@ -187,6 +187,7 @@ section {
   display: flex;
 }
 
+/*Méthode BEM BLOC PAGE*/
 .bloc_page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,6 +198,12 @@ section {
           flex-direction: column;
   padding: 5%;
   margin: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bloc_page--pagemenu {
+  margin: 0 auto;
 }
 
 .bloc_page__menu {
@@ -248,10 +255,6 @@ section {
   font-size: 25px;
 }
 
-.bloc_page--1 {
-  margin: 0 auto;
-}
-
 .fas {
   width: 100%;
   height: auto;
@@ -280,130 +283,46 @@ footer {
 }
 
 /*Page*/
-.bloc_page1 {
+/*Méthode BEM Section*/
+.section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5%;
-  margin: 0 auto;
-}
-
-.section1 {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #fcdfdb;
-  text-align: center;
-  font-family: 'alpine';
-  /*padding: 20px;*/
-}
-
-.bloc_page2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5%;
-  margin: 0 auto;
-}
-
-.section2 {
-  background-color: #fff5fe;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  font-family: 'alpine';
-}
-
-.bloc_page3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5%;
-  margin: 0 auto;
-}
-
-.section3 {
-  background-color: #f9f9f9;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  font-family: 'alpine';
-}
-
-.bloc_page4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5%;
-  margin: 0 auto;
-}
-
-.section4 {
-  background-color: #fdfffd;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  font-family: 'alpine';
-}
-
-.section_mention-legale {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #fddddf;
-}
-
-.bloc_page_prochainement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5%;
-  margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.section_prochainement {
+.section--1 {
+  background-color: #fcdfdb;
+  font-family: 'alpine';
+}
+
+.section--2 {
+  background-color: #fff5fe;
+  font-family: 'alpine';
+}
+
+.section--3 {
+  background-color: #f9f9f9;
+  font-family: 'alpine';
+}
+
+.section--4 {
+  background-color: #fdfffd;
+  font-family: 'alpine';
+}
+
+.section--mention-legale {
+  background-color: #fddddf;
+}
+
+.section--prochainement {
   background-color: beige;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -411,10 +330,39 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding: 5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
+/*.section1 {
+    background-color: #fcdfdb;
+    font-family: 'alpine';
+}
+
+.section2 {
+    background-color: #fff5fe;
+    font-family: 'alpine';
+}
+
+.section3 {
+    background-color: #f9f9f9;
+    font-family: 'alpine';
+}
+
+.section4 {
+    background-color: #fdfffd;
+    font-family: 'alpine';
+}
+
+.section_mention-legale {
+    background-color: #fddddf;
+}
+
+.section_prochainement {
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+*/
 .h2 {
   font-family: 'Courier New', Courier, monospace;
 }
