@@ -290,57 +290,6 @@ footer {
           box-sizing: border-box;
 }
 
-.bouton {
-  -webkit-animation: thing 3s infinite;
-          animation: thing 3s infinite;
-}
-
-@-webkit-keyframes thing {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  3% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-  4% {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
-  }
-  5% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@keyframes thing {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  3% {
-    -webkit-transform: rotate(-5deg);
-            transform: rotate(-5deg);
-  }
-  4% {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
-  }
-  5% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
 /*Page*/
 /*Méthode BEM Section*/
 .section {
@@ -393,33 +342,6 @@ footer {
 
 .h2 {
   font-family: 'Courier New', Courier, monospace;
-}
-
-.expand {
-  position: relative;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.expand:after {
-  display: block;
-  content: '';
-  border-bottom: solid 3px #000000;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
-  -webkit-transform-origin: 100% 50%;
-          transform-origin: 100% 50%;
-}
-
-.expand:hover:after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-transform-origin: 0 50%;
-          transform-origin: 0 50%;
 }
 
 h1 {
@@ -566,6 +488,86 @@ h1 {
   }
   to {
     top: 0px;
+  }
+}
+
+/* Animation soulignement gauche droite */
+.expand {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.expand:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #000000;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+.expand:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+}
+
+/* Animation wiggle */
+.bouton {
+  -webkit-animation: thing 3s infinite;
+          animation: thing 3s infinite;
+}
+
+@-webkit-keyframes thing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  3% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  4% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  5% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes thing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  3% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  4% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  5% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
