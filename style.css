@@ -395,6 +395,33 @@ footer {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.expand {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.expand:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px #000000;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+.expand:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+}
+
 h1 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   /*font-weight: bold;*/
