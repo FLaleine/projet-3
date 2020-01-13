@@ -501,7 +501,7 @@ h1 {
 .expand:after {
   display: block;
   content: '';
-  border-bottom: solid 3px #000000;
+  border-bottom: solid 3px lightgrey;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
