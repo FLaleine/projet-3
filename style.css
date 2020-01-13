@@ -163,6 +163,14 @@
   color: #5a32c0;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: yellow;
+}
+
 /*Typographie*/
 body {
   margin: 0px;
@@ -187,6 +195,7 @@ section {
   display: flex;
 }
 
+/*Méthode BEM BLOC PAGE*/
 .bloc_page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -197,6 +206,12 @@ section {
           flex-direction: column;
   padding: 5%;
   margin: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bloc_page--pagemenu {
+  margin: 0 auto;
 }
 
 .bloc_page__menu {
@@ -276,130 +291,46 @@ footer {
 }
 
 /*Page*/
-.bloc_page1 {
+/*Méthode BEM Section*/
+.section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5%;
-  margin: 0 auto;
-}
-
-.section1 {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #fcdfdb;
-  text-align: center;
-  font-family: 'alpine';
-  /*padding: 20px;*/
-}
-
-.bloc_page2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5%;
-  margin: 0 auto;
-}
-
-.section2 {
-  background-color: #fff5fe;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  font-family: 'alpine';
-}
-
-.bloc_page3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5%;
-  margin: 0 auto;
-}
-
-.section3 {
-  background-color: #f9f9f9;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  font-family: 'alpine';
-}
-
-.bloc_page4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5%;
-  margin: 0 auto;
-}
-
-.section4 {
-  background-color: #fdfffd;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  font-family: 'alpine';
-}
-
-.section_mention-legale {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #fddddf;
-}
-
-.bloc_page_prochainement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5%;
-  margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.section_prochainement {
+.section--1 {
+  background-color: #fcdfdb;
+  font-family: 'alpine';
+}
+
+.section--2 {
+  background-color: #fff5fe;
+  font-family: 'alpine';
+}
+
+.section--3 {
+  background-color: #f9f9f9;
+  font-family: 'alpine';
+}
+
+.section--4 {
+  background-color: #fdfffd;
+  font-family: 'alpine';
+}
+
+.section--mention_legale {
+  background-color: #fddddf;
+}
+
+.section--prochainement {
   background-color: beige;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -407,8 +338,6 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding: 5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .h2 {
@@ -559,6 +488,86 @@ h1 {
   }
   to {
     top: 0px;
+  }
+}
+
+/* Animation soulignement gauche droite */
+.expand {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.expand:after {
+  display: block;
+  content: '';
+  border-bottom: solid 3px lightgrey;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+
+.expand:hover:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+}
+
+/* Animation wiggle */
+.bouton {
+  -webkit-animation: thing 3s infinite;
+          animation: thing 3s infinite;
+}
+
+@-webkit-keyframes thing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  3% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  4% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  5% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes thing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  3% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  4% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  5% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
