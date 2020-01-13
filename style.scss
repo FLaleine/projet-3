@@ -83,6 +83,10 @@ h1 {
     margin-top: 0px;
 }
 
+h3 {
+    font-weight: normal;
+}
+
 .h1prochainement {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -126,10 +130,9 @@ h1 {
     font-size: 2.5em;
 }
 
-.note-index {
-    font-family: 'MaShanZheng';
-    color: #101010;
+.index {
     font-size: 54px;
+    font-weight: normal;
 }
 
 .menu {
