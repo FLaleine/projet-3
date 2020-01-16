@@ -11,31 +11,6 @@
 }
 
 @font-face {
-  font-family: 'auber';
-  src: url("./police/auber-cf/AuberCFBold-Bold.ttf");
-}
-
-@font-face {
-  font-family: 'yikes';
-  src: url("./police/Fonts/yikes!__.ttf");
-}
-
-@font-face {
-  font-family: 'akadora';
-  src: url("./police/Fonts/akadora.ttf");
-}
-
-@font-face {
-  font-family: 'evie';
-  src: url("./police/Fonts/evie s hand.ttf");
-}
-
-@font-face {
-  font-family: 'andriko';
-  src: url("./police/Fonts/andriko.ttf");
-}
-
-@font-face {
   font-family: 'kaushan';
   src: url("./police/Fonts/kaushanscript-regular.ttf");
 }
@@ -72,6 +47,7 @@
 
 a {
   text-decoration: none;
+  color: yellow;
 }
 
 a:visited {
