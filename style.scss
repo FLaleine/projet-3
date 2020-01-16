@@ -452,6 +452,21 @@ footer {
     }
 }
 
+/*Animation zoom*/
+.bloc_page__menu {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.bloc_page__menu:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.4
+}
+
+
 /* Responsive design (adaptation a l'écran)*/
 @media all and (max-width: 1024px) {
     header #logo {
