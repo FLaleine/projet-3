@@ -161,6 +161,7 @@ h3 {
 
 body {
     margin: 0px;
+    height: 100%;
 }
 
 header {
@@ -187,6 +188,8 @@ section {
     padding: 5%;
     margin: 50px;
     box-sizing: border-box;
+    min-height: 100%;
+
 
     &--pagemenu {
         margin: 0 auto;
@@ -255,6 +258,11 @@ footer {
     font: 1em Verdana;
     width: 100%;
     box-sizing: border-box;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 /*Page*/
@@ -329,13 +337,15 @@ footer {
     &--3 {
         fill: #0329dc;
     }
+
     &--31 {
         fill: #0670f3;
     }
+
     &--32 {
         fill: #229df9;
     }
-    
+
     &--4 {
         fill: url(#gradient1);
     }
